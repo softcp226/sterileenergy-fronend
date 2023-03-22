@@ -1,6 +1,9 @@
 (async () => {
   try {
-    const response = await fetch("https://benefitsgloballtd-backend.glitch.me", {
+    const response = await fetch(
+      // "https://benefitsgloballtd-backend.glitch.me",
+      // "https://benefitsgloballtd-backend.glitch.me"
+       {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({ message: "server is up and running" }),

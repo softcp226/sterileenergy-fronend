@@ -136,13 +136,12 @@ const handle_request = () => {
 
   
   switch (plan.value) {
-    case "Silver Plan":
+    case "Basic Plan":
       if (!amount.value) return;
       if (!plan.value) return;
-      if (parseInt(amount.value) < 50) return show_err();
+      if (parseInt(amount.value) < 100) return show_err();
       disable_show_err();
-      // if (return_time.value == "daily_return") {
-      var percentage = "10% return after 3 days";
+      var percentage = "10% return after 24 hours";
       var earning = `Expected Earning: $${Math.round(
         (amount.value / 100) * 10,
       )}`;
@@ -170,17 +169,17 @@ const handle_request = () => {
     //   break;
     // }
 
-    case "Gold Plan":
+    case "Premium Plan":
       if (!amount.value) return;
       if (!plan.value) return;
-      if (parseInt(amount.value) < 2000) return show_err();
+      if (parseInt(amount.value) < 5000) return show_err();
       disable_show_err();
       // if (plan.value == "daily_return") {
-      var percentage = "15% return after 5 days";
+      var percentage = "20% return after 24 hours";
       var earning = `Expected Earning: $${Math.round(
-        (amount.value / 100) * 15,
+        (amount.value / 100) * 20,
       )}`;
-      profit = Math.round((amount.value / 100) * 15);
+      profit = Math.round((amount.value / 100) * 20);
       write_percentage(percentage, earning);
       // handle_submit_request({
       //   profit,
@@ -204,13 +203,13 @@ const handle_request = () => {
     //   break;
     // }
 
-    case "VIP Plan":
+    case "Ultimate Plan":
       if (!amount.value) return;
       if (!plan.value) return;
-      if (parseInt(amount.value) < 50000) return show_err();
+      if (parseInt(amount.value) < 7000) return show_err();
       disable_show_err();
       // if (return_time.value == "daily_return") {
-      var percentage = "30% return after 10 days";
+      var percentage = "30% return after 24 hours";
       var earning = `Expected Earning: $${Math.round(
         (amount.value / 100) * 30,
       )}`;
@@ -238,25 +237,25 @@ const handle_request = () => {
     //   break;
     // }
 
-    case "Promo Plan":
-      if (!amount.value) return;
-      if (!plan.value) return;
-      if (parseInt(amount.value) < 50000) return show_err();
-      disable_show_err();
-      // if (return_time.value == "daily_return") {
-      var percentage = "50% return after 15 days";
-      var earning = `Expected Earning: $${Math.round(
-        (amount.value / 100) * 50,
-      )}`;
-      profit = Math.round((amount.value / 100) * 50);
-      write_percentage(percentage, earning);
-      // handle_submit_request({
-      //   profit,
-      //   plan: plan.value,
-      //   amount: amount.value,
-      //   completion_time: "15 days",
-      // });
-      break;
+    // case "Promo Plan":
+    //   if (!amount.value) return;
+    //   if (!plan.value) return;
+    //   if (parseInt(amount.value) < 50000) return show_err();
+    //   disable_show_err();
+    //   // if (return_time.value == "daily_return") {
+    //   var percentage = "50% return after 15 days";
+    //   var earning = `Expected Earning: $${Math.round(
+    //     (amount.value / 100) * 50,
+    //   )}`;
+    //   profit = Math.round((amount.value / 100) * 50);
+    //   write_percentage(percentage, earning);
+    //   // handle_submit_request({
+    //   //   profit,
+    //   //   plan: plan.value,
+    //   //   amount: amount.value,
+    //   //   completion_time: "15 days",
+    //   // });
+    //   break;
 
     default:
       handle_keychange();
