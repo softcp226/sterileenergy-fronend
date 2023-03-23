@@ -32,7 +32,7 @@ const handle_delete_user = async (event, user_id) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://sterileenergy-backend.glitch.me/api/admin/users/delete_user",
+      "https://sterileenergy-backend01.glitch.me/api/admin/users/delete_user",
       // "http://localhost:5000/api/admin/users/delete_user",
       {
         method: "DELETE",
@@ -103,7 +103,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://sterileenergy-backend.glitch.me/api/admin/fetch_users",
+      "https://sterileenergy-backend01.glitch.me/api/admin/fetch_users",
       // "http://localhost:5000/api/admin/fetch_users",
       {
         method: "POST",

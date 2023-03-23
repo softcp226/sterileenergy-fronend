@@ -33,7 +33,7 @@ const handle_delete_deposit_request = async (btn, deposit_id) => {
   try {
     const response = await fetch(
       // "http://localhost:5000/api/admin/deposit_request/delete",
-      "https://sterileenergy-backend.glitch.me/api/admin/deposit_request/delete",
+      "https://sterileenergy-backend01.glitch.me/api/admin/deposit_request/delete",
       {
         method: "DELETE",
         headers: { "content-type": "application/json" },
@@ -128,7 +128,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://sterileenergy-backend.glitch.me/api/admin/deposit_request",
+      "https://sterileenergy-backend01.glitch.me/api/admin/deposit_request",
       // "http://localhost:5000/api/admin/deposit_request",
        {
       method: "POST",

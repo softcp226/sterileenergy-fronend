@@ -20,7 +20,7 @@ let handle_cancel_investment = async (button, investment) => {
     button.innerHTML = "proccessing...";
     const response = await fetch(
       // "http://localhost:5000/api/user/investment/cancel",
-      "https://sterileenergy-backend.glitch.me/api/user/investment/cancel",
+      "https://sterileenergy-backend01.glitch.me/api/user/investment/cancel",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -108,7 +108,7 @@ const shape_result = (investments) => {
   try {
     const response = await fetch(
       // "http://localhost:5000/api/user/investments/fetch",
-      "https://sterileenergy-backend.glitch.me/api/user/investments/fetch",
+      "https://sterileenergy-backend01.glitch.me/api/user/investments/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

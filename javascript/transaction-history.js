@@ -62,7 +62,7 @@ const shape_result = (userInfo) => {
   try {
     const response = await fetch(
       // "http://localhost:5000/api/user/transactions/fetch",
-      "https://sterileenergy-backend.glitch.me/api/user/transactions/fetch",
+      "https://sterileenergy-backend01.glitch.me/api/user/transactions/fetch",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

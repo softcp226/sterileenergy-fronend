@@ -32,7 +32,7 @@ const handle_cancel_investment = async (btn, investment) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://sterileenergy-backend.glitch.me/api/admin/investment/cancel",
+      "https://sterileenergy-backend01.glitch.me/api/admin/investment/cancel",
       // "http://localhost:5000/api/admin/investment/cancel",
       {
         method: "POST",
@@ -123,7 +123,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://sterileenergy-backend.glitch.me/api/admin/investment/fetch",
+      "https://sterileenergy-backend01.glitch.me/api/admin/investment/fetch",
       // "http://localhost:5000/api/admin/investment/fetch",
       {
         method: "POST",

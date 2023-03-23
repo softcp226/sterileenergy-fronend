@@ -2,12 +2,13 @@
   try {
     const response = await fetch(
       // "https://benefitsgloballtd-backend.glitch.me",
-      "https://sterileenergy-backend.glitch.me",
-       {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ message: "server is up and running" }),
-    });
+      "https://sterileenergy-backend01.glitch.me",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ message: "server is up and running" }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
