@@ -33,7 +33,7 @@ const handle_approve_withdrawal = async (btn, withdrawal_request) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://benefitsgloballtd-backend.glitch.me/api/admin/withdrawal/fetch/withdrawal/approve",
+      "https://sterileenergy-backend.glitch.me/api/admin/withdrawal/fetch/withdrawal/approve",
       // "http://localhost:5000/api/admin/withdrawal/fetch/withdrawal/approve",
       {
         method: "POST",
@@ -67,7 +67,7 @@ const handle_delete_withdrawal = async (btn, withdrawal_request) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-      "https://benefitsgloballtd-backend.glitch.me/api/admin/withdrawal/fetch/withdrawal/delete",
+      "https://sterileenergy-backend.glitch.me/api/admin/withdrawal/fetch/withdrawal/delete",
       // "http://localhost:5000/api/admin/withdrawal/fetch/withdrawal/delete",
       {
         method: "POST",
@@ -173,7 +173,7 @@ const setText = (userInfo) => {
   let admin = getCookie("admin");
   try {
     const response = await fetch(
-       "https://benefitsgloballtd-backend.glitch.me/api/admin/withdrawal/fetch",
+       "https://sterileenergy-backend.glitch.me/api/admin/withdrawal/fetch",
       // "http://localhost:5000/api/admin/withdrawal/fetch",
       {
         method: "POST",

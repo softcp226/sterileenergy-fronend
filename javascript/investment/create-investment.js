@@ -8,8 +8,8 @@ const handle_submit_request = async (form) => {
   document.querySelector("#submit").innerHTML = "proccesing...";
   try {
     const response = await fetch(
-      "http://localhost:5000/api/user/create_investment",
-      // "https://benefitsgloballtd-backend.glitch.me/api/user/create_investment",
+      // "http://localhost:5000/api/user/create_investment",
+      "https://sterileenergy-backend.glitch.me/api/user/create_investment",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
@@ -18,7 +18,7 @@ const handle_submit_request = async (form) => {
           user,
           investment_plan: form.plan,
           investment_amount: form.amount,
-          completion_time:form.completion_time,
+          completion_time: form.completion_time,
           // return_time: return_time.value,
           profit: form.profit,
         }),

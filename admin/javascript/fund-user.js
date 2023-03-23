@@ -27,7 +27,7 @@ const handle_deposit = async (form) => {
   document.querySelector("#submit").innerHTML = "processing...";
   try {
     const response = await fetch(
-       "https://benefitsgloballtd-backend.glitch.me/api/admin/investment/fetch",
+      "https://sterileenergy-backend.glitch.me/api/admin/investment/fetch",
       // "http://localhost:5000/api/admin/user/fund",
       {
         method: "POST",

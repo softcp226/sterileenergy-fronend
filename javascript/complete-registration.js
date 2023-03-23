@@ -37,13 +37,14 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "http://localhost:5000/api/user/login",
-      // "https://benefitsgloballtd-backend.glitch.me/api/user/login",
-     {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
+      // "http://localhost:5000/api/user/login",
+     "https://sterileenergy-backend.glitch.me/api/user/login",
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {
@@ -64,8 +65,8 @@ const complete_registration = async (userInfo) => {
   try {
     document.querySelector("#register").innerHTML = "proccessing...";
     const response = await fetch(
-       "http://localhost:5000/api/new_user/complete_registration",
-      // "https://benefitsgloballtd-backend.glitch.me/api/new_user/complete_registration",
+      // "http://localhost:5000/api/new_user/complete_registration",
+      "https://sterileenergy-backend.glitch.me/api/new_user/complete_registration",
       {
         method: "POST",
         //   headers: { "content-type": "application/json" },

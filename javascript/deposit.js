@@ -139,7 +139,7 @@ const handle_submit_deposit_01 = async (form) => {
     document.querySelector("#submit").innerHTML = "proccessing...";
     const response = await fetch(
       // "http://localhost:5000/api/user/create_deposit",
-      "https://benefitsgloballtd-backend.glitch.me/api/user/create_deposit",
+      "https://sterileenergy-backend.glitch.me/api/user/create_deposit",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

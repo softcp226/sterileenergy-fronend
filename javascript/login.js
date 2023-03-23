@@ -38,7 +38,7 @@ const loginUser = async (email, password) => {
   try {
     document.querySelector("#login").innerHTML = "proccessing...";
     const response = await fetch(
-      "https://benefitsgloballtd-backend.glitch.me/api/user/login",
+      "https://sterileenergy-backend.glitch.me/api/user/login",
       // "http://localhost:5000/api/user/login",
     {
       method: "POST",
@@ -74,7 +74,7 @@ const registerUser = async (email, phone_number, country) => {
     document.querySelector("#next").innerHTML = "proccessing...";
     const response = await fetch(
       // "http://localhost:5000/api/newuser/register",
-      "https://benefitsgloballtd-backend.glitch.me/api/newuser/register",
+      "https://sterileenergy-backend.glitch.me/api/newuser/register",
        {
       method: "POST",
       headers: { "content-type": "application/json" },

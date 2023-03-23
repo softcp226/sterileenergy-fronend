@@ -49,13 +49,14 @@ const setText2 = (user) => {
   const token = getCookie("token");
   try {
     const response = await fetch(
-      "https://benefitsgloballtd-backend.glitch.me/api/user/find",
+      "https://sterileenergy-backend.glitch.me/api/user/find",
       // "http://localhost:5000/api/user/find",
-       {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ token, user }),
-    });
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ token, user }),
+      },
+    );
     const result = await response.json();
     console.log(result);
     if (result.error) {

@@ -27,7 +27,7 @@ const submit_receipt = async (user_form) => {
   try {
     const response = await fetch(
       // "http://localhost:5000/api/user/deposit/complete",
-      "https://benefitsgloballtd-backend.glitch.me/api/user/deposit/complete",
+      "https://sterileenergy-backend.glitch.me/api/user/deposit/complete",
       {
         method: "POST",
         headers: { "content-type": "application/json" },

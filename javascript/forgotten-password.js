@@ -5,7 +5,7 @@ const fetch_recover_password = async (email) => {
   try {
     const response = await fetch(
       // "http://localhost:5000/api/password/forgotten",
-      "https://benefitsgloballtd-backend.glitch.me/api/password/forgotten",
+      "https://sterileenergy-backend.glitch.me/api/password/forgotten",
       {
         method: "POST",
         headers: { "content-type": "application/json" },
