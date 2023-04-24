@@ -18,9 +18,6 @@
 //   };
 // });
 
-
-
-
 const getParam = () => {
   const urlParams = new URLSearchParams(location.search);
 
